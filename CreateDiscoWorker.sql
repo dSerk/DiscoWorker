@@ -51,7 +51,11 @@ create table Media (
 	jobid int foreign key references Jobs(id), 
 	trackingnum varchar(max),
 	serialnum varchar(max),
-	dateReceived datetime   
+	passw varchar(max),
+	dateReceived datetime,
+	locRoom varchar(max),
+	locBox varchar(max),
+	pmname varchar(max)
 	)
 
 create table Cases(
